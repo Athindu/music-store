@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="545.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SimpleTableController">
+   <children>
+      <TableView fx:id="tblParticipants" layoutX="16.0" layoutY="47.0" onSort="#initialize" prefHeight="232.0" prefWidth="660.0">
+        <columns>
+          <TableColumn fx:id="ItemIdcol" prefWidth="88.0" text="Item ID" />
+            <TableColumn fx:id="titlecol" prefWidth="133.0" text="Song title" />
+            <TableColumn fx:id="genrecol" minWidth="0.0" prefWidth="74.0" text="Genre" />
+            <TableColumn fx:id="releasecol" minWidth="0.0" prefWidth="127.0" text="Release Date" />
+            <TableColumn fx:id="artistcol" minWidth="0.0" prefWidth="145.0" text="     Artist" />
+            <TableColumn fx:id="pricecol" minWidth="0.0" prefWidth="91.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="226.0" layoutY="14.0" prefHeight="27.0" prefWidth="190.0" text="Music Library">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ItemIDtext" layoutX="109.0" layoutY="316.0" onAction="#ADDdetails" />
+      <TextField fx:id="Genre" layoutX="109.0" layoutY="356.0" onAction="#ADDdetails" />
+      <TextField fx:id="releasedate" layoutX="466.0" layoutY="356.0" onAction="#ADDdetails" />
+      <TextField fx:id="titletext" layoutX="466.0" layoutY="316.0" onAction="#ADDdetails" />
+      <Label layoutX="18.0" layoutY="319.0" text="Item ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="359.0" text="Release Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="359.0" text="Genre">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="319.0" text="Song title">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="296.0" layoutY="41.0" startX="-100.0" />
+      <Button fx:id="submit" layoutX="268.0" layoutY="469.0" mnemonicParsing="false" onAction="#ADDdetails" prefHeight="25.0" prefWidth="149.0" text="Insert Details">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="19.0" layoutY="401.0" text="Artist">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="401.0" text="Price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Artist" layoutX="109.0" layoutY="395.0" onAction="#ADDdetails" />
+      <TextField fx:id="Price" layoutX="466.0" layoutY="398.0" onAction="#ADDdetails" />
+   </children>
+</AnchorPane>

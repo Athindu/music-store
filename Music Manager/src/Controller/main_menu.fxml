@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.main_menu">
+   <children>
+      <ImageView fitHeight="486.0" fitWidth="964.0" layoutX="-128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ExtraLibraries/image.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="sort" layoutX="616.0" layoutY="164.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sort" prefHeight="31.0" prefWidth="198.0" style="-fx-background-color: #cce6ff;" text="SORT">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="IDdelete" layoutX="616.0" layoutY="117.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#deleteView" prefHeight="31.0" prefWidth="198.0" style="-fx-background-color: #cce6ff;" text="DELETE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="616.0" layoutY="286.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="198.0" style="-fx-background-color: #cce6ff;" text="EXIT">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="addviewbutton" layoutX="616.0" layoutY="67.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#addView" prefHeight="31.0" prefWidth="198.0" style="-fx-background-color: #cce6ff;" text="INSERET &amp; VIEW">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBuyItem" layoutX="616.0" layoutY="213.0" mnemonicParsing="false" onAction="#buyItem" prefHeight="31.0" prefWidth="198.0" style="-fx-background-color: #cce6ff;" text="BUY MUSIC">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="176.0" opacity="0.98" prefHeight="28.0" prefWidth="372.0" style="-fx-background-color: #0cccb2;" text="WESTMINSTER" textFill="#41514e">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
